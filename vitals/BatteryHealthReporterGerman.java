@@ -57,7 +57,7 @@ public class BatteryHealthReporterGerman implements Function<BatteryHealthResult
 
 	private void checkChargeRate(final BatteryHealthResult result, StringBuilder message) {
 		if (result.isChargeRateBreach()) {
-			message.append(" Gebührensatzwert verletzt!" + OPTIMAL_MINIMUM_VALUE
+			message.append(" Gebauhrensatzwert verletzt!" + OPTIMAL_MINIMUM_VALUE
 					+ +BatteryHealthRange.HIGH_CHARGE_RATE_BREACH.getMin() + ". " + OPTIMAL_MAXIMUM_VALUE
 					+ BatteryHealthRange.HIGH_CHARGE_RATE_BREACH.getMax());
 			message.append("\n");
