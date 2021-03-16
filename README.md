@@ -19,8 +19,11 @@ at home, in public place, within vehicle / regenerative braking
 - Estimate life, inventory and supply chains
 
 ## Implemented functionalities
-1. Battery Health check
-2. Extensions
+1. Battery Health check - Status of given battery will be checked based on three parameters - SOC, Chargerate and temperature.
+2. Extensions - Use BatteryManagementProperties to choose health check based on tolerance, language for reporting
     - Battery health check based on tolerance
     - Battery health report in English and German
     - Use BatterManagementProperties.java to change Language and tolerance
+3. Reporting solution:
+   - IReporter has two implementations - LogReporter(to log result) and Accumulator(to accumulate result for controller)
+
