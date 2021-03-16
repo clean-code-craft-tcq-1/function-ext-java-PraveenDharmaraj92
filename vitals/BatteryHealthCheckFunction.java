@@ -3,7 +3,6 @@ package vitals;
 import java.util.function.Function;
 
 /**
- * @author PDH2COB
  *
  *Battery Health function to check health levels based on parameters
  */

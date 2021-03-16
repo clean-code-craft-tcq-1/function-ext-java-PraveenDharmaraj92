@@ -1,7 +1,6 @@
 package vitals;
 
 /**
- * @author PDH2COB
  * Class to store result of battery health check
  */
 public class BatteryHealthResult {

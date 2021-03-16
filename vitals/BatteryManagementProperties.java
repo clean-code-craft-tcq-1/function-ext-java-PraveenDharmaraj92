@@ -1,7 +1,6 @@
 package vitals;
 
 /**
- * @author PDH2COB
  * Properties class to choose functionalities
  */
 public class BatteryManagementProperties {

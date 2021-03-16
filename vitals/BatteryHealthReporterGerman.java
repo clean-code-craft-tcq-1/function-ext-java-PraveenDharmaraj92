@@ -3,7 +3,7 @@ package vitals;
 import java.util.function.Function;
 
 /**
- * @author PDH2COB Health report in German
+ * Health report in German
  */
 public class BatteryHealthReporterGerman implements Function<BatteryHealthResult, String> {
 

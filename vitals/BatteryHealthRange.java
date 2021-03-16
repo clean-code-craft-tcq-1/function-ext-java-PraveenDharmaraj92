@@ -2,7 +2,6 @@ package vitals;
 
 /**
  * Enumeration for battery health parameter limits
- * @author PDH2COB
  * 
  */
 public enum BatteryHealthRange {

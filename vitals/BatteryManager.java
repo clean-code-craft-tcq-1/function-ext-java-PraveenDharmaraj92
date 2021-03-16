@@ -1,7 +1,6 @@
 package vitals;
 
 /**
- * @author PDH2COB
  * Battery manager to control battery health functionalities
  */
 public class BatteryManager {
@@ -26,6 +25,12 @@ public class BatteryManager {
 			new BatteryHealthReporterGerman().apply(result);
 		}
 	}
+
+	public BatteryHealthResult getResult() {
+		return result;
+	}
+	
+	
 
 
 }
