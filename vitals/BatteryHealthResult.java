@@ -5,66 +5,36 @@ package vitals;
  */
 public class BatteryHealthResult {
 	
-	boolean socBreach;
+	private boolean socOk;
 	
-	boolean temperatureBreach;
+	private boolean temperatureOk;
 	
-	boolean chargeRateBreach;
-	
-	boolean socWarning;
-	
-	boolean temperatureWarning;
-	
-	boolean chargeRateWarning;
+	private boolean chargeRateOk;
 
-	public boolean isSocBreach() {
-		return socBreach;
+	public boolean isSocOK() {
+		return socOk;
 	}
 
-	public void setSocBreach(boolean socBreach) {
-		this.socBreach = socBreach;
+	public void setSocOK(boolean socOK) {
+		this.socOk = socOK;
 	}
 
-	public boolean isTemperatureBreach() {
-		return temperatureBreach;
+	public boolean isTemperatureOK() {
+		return temperatureOk;
 	}
 
-	public void setTemperatureBreach(boolean temperatureBreach) {
-		this.temperatureBreach = temperatureBreach;
+	public void setTemperatureOK(boolean temperatureOK) {
+		this.temperatureOk = temperatureOK;
 	}
 
-	public boolean isChargeRateBreach() {
-		return chargeRateBreach;
+	public boolean isChargeRateOK() {
+		return chargeRateOk;
 	}
 
-	public void setChargeRateBreach(boolean chargeRateBreach) {
-		this.chargeRateBreach = chargeRateBreach;
-	}
-
-	public boolean isSocWarning() {
-		return socWarning;
-	}
-
-	public void setSocWarning(boolean socWarning) {
-		this.socWarning = socWarning;
-	}
-
-	public boolean isTemperatureWarning() {
-		return temperatureWarning;
-	}
-
-	public void setTemperatureWarning(boolean temperatureWarning) {
-		this.temperatureWarning = temperatureWarning;
-	}
-
-	public boolean isChargeRateWarning() {
-		return chargeRateWarning;
-	}
-
-	public void setChargeRateWarning(boolean chargeRateWarning) {
-		this.chargeRateWarning = chargeRateWarning;
+	public void setChargeRateOK(boolean chargeRateOK) {
+		this.chargeRateOk = chargeRateOK;
 	}
 	
-	
 
+	
 }
