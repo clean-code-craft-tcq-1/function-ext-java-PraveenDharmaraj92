@@ -23,7 +23,8 @@ at home, in public place, within vehicle / regenerative braking
 2. Extensions - Use BatteryManagementProperties to choose health check based on tolerance, language for reporting
     - Battery health check based on tolerance
     - Battery health report in English and German
-    - Use BatterManagementProperties.java to change Language and tolerance
+    - Use BatteryManagement.properties to change Language and tolerance value
 3. Reporting solution:
-   - IReporter has two implementations - LogReporter(to log result) and Accumulator(to accumulate result for controller)
+   - IBatteryHealthChecker to check battery health
+   - BatteryHealthReporter and BatteryHealthAccumulator implement the IBatteryHealthChecker with reporting and accumulating functionality respectively.
 
