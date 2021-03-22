@@ -3,25 +3,26 @@ package vitals;
 /**
  * Accumulator class that stores the result of health check
  */
-public class BatteryHealthAccumulator implements IReporter{
+public class BatteryHealthAccumulator implements IBatteryHealthChecker {
 
-	private final BatteryHealthController controller;
-	
+	private final Battery battery;
+
 	private BatteryHealthResult result;
-	
-	public BatteryHealthAccumulator(final BatteryHealthController controller) {
-		this.controller=controller;
+
+	public BatteryHealthAccumulator(final Battery battery) {
+		this.battery = battery;
 	}
+
 	@Override
-	public void report() {
-		controller.getManager().checkHealth();
-		result = controller.getManager().getResult();
+	public void checkHealth() {
+		accumulateResult(checkBatteryHealth(battery));
 	}
-	
-	public BatteryHealthResult getResult(){
-		if(result==null){
-			report();
-		}
+
+	public void accumulateResult(BatteryHealthResult result) {
+		this.result = result;
+	}
+
+	public BatteryHealthResult getResult() {
 		return result;
 	}
 
