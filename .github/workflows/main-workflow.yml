@@ -19,4 +19,4 @@ jobs:
     - name: Build
       run: javac vitals/Main.java
     - name: Verify
-      run: java -ea -classpath . vitals.Main
+      run: java -ea -classpath .  vitals.Main
