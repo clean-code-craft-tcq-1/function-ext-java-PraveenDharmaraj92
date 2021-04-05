@@ -14,10 +14,10 @@ public class BatteryMgmtProperties {
 	private BatteryMgmtProperties() {
 		try {
 			InputStream propertiesInputStream = getClass().getClassLoader()
-					.getResourceAsStream("BatteryManagement.properties");
+					.getResourceAsStream("resources/BatteryManagement.properties");
 			overallProperties.load(propertiesInputStream);
 			String languagePropFile = overallProperties.get(PropertyKeys.LANGUAGE).toString();
-			propertiesInputStream = getClass().getClassLoader().getResourceAsStream(languagePropFile + ".properties");
+			propertiesInputStream = getClass().getClassLoader().getResourceAsStream("resources/"+languagePropFile + ".properties");
 			languageProperties.load(propertiesInputStream);
 
 		} catch (IOException e) {
